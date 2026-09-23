@@ -1,5 +1,14 @@
 # Video production calendar
 
+## Cadence locked in
+
+- **YouTube long-form:** Mondays
+- **YouTube Shorts:** Tue / Thu / Sat
+- **LinkedIn:** Wed / Fri
+- **X:** several times a week
+- **Sprint 1:** Claude Associate dictionary (prompt, context window, token)
+
+
 ## Weekly cadence
 - **YouTube long:** Monday
 - **YouTube Shorts:** Tuesday, Thursday, Saturday
