@@ -45,6 +45,7 @@ MENU = [
     ("   ├─ Menu Design", "3_Simulation/menu_design.md"),
     ("4. Formula", "4_Formula/README.md"),
     ("   ├─ Specs", "4_Formula/specs.md"),
+    ("   ├─ Video Production Calendar", "4_Formula/video_production_calendar.md"),
     ("   ├─ Decisions", "4_Formula/decisions.md"),
     ("   ├─ LLM Thinking Log", "4_Formula/llm_thinking_log.md"),
     ("   ├─ DSL", "4_Formula/dsl.md"),

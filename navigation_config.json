@@ -2,8 +2,7 @@
   "projectMenu": [
     {"label": "Home", "url": "index.html"},
     {"label": "Docs", "url": "5_Symbols/markdown_renderer.html?file=2_Environment/README.md"},
-    {"label": "API", "url": "5_Symbols/markdown_renderer.html?file=4_Formula/README.md"},
-    {"label": "Video Production Calendar", "path": "4_Formula/video_production_calendar.md"}
+    {"label": "API", "url": "5_Symbols/markdown_renderer.html?file=4_Formula/README.md"}
   ],
   "debugMenu": [
     {"label": "1. Real Unknown", "url": "1_Real_Unknown/README.md"},
@@ -43,6 +42,7 @@
     {"label": "   ├─ Menu Design", "url": "3_Simulation/menu_design.md"},
     {"label": "4. Formula", "url": "4_Formula/README.md"},
     {"label": "   ├─ Specs", "url": "4_Formula/specs.md"},
+    {"label": "   ├─ Video Production Calendar", "url": "4_Formula/video_production_calendar.md"},
     {"label": "   ├─ Decisions", "url": "4_Formula/decisions.md"},
     {"label": "   ├─ LLM Thinking Log", "url": "4_Formula/llm_thinking_log.md"},
     {"label": "   ├─ DSL", "url": "4_Formula/dsl.md"},
