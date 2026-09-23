@@ -4,7 +4,7 @@
 > Latest run overwrites this file; one report per test run.
 
 ## Run Info
-- **Date:** 2026-09-23 08:27
+- **Date:** 2026-09-23 08:28
 - **Trigger:** Manual run
 - **Mode:** Local filesystem
 - **Tester:** smoke_test.py (automated)
@@ -18,8 +18,8 @@
 | Menu Links Resolve | ✅ Pass | — |
 | Project Menu | ✅ Pass | — |
 | Debug Menu | ✅ Pass | — |
-| Nav 3-Way Sync | ✅ Pass | — |
-| Stage Docs In Menu | ❌ Fail | orphaned: ['4_Formula/video_production_calendar.md'] |
+| Nav 3-Way Sync | ❌ Fail | drift: ['4_Formula/video_production_calendar.md'] |
+| Stage Docs In Menu | ✅ Pass | — |
 | Social Links | ✅ Pass | — |
 | README Pages URL | ✅ Pass | — |
 | Secrets Scan | ✅ Pass | — |
@@ -27,8 +27,8 @@
 
 ## Failures
 
-### #1 — Stage Docs In Menu
-- **Error:** orphaned: ['4_Formula/video_production_calendar.md']
+### #1 — Nav 3-Way Sync
+- **Error:** drift: ['4_Formula/video_production_calendar.md']
 - **GitHub Issue:** _create per the Smoke Tests & GitHub Issues rule_
 - **Status:** Open
 
