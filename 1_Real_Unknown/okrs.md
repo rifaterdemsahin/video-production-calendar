@@ -7,6 +7,7 @@ Create a reliable video production calendar for Skool AI certification courses, 
 1. ✅ **Maintain the published weekly cadence across all four platforms.**
    - Status: Active — Production calendar defined with locked cadence
    - Platforms: YT Long (Mon), Shorts (Tue/Thu/Sat), LinkedIn (Wed/Fri), X (multiple/week)
+   - Planning method: Time-first budgeting (see [⏱️ Time Budget Practice](time_budget_practice.md))
 
 2. 🎓 **Ship Sprint 1 Claude Associate dictionary videos from ai-dictionary-timeline.**
    - Status: In Progress — Sprint 1 topics identified and scheduled

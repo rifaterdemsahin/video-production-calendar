@@ -1,5 +1,15 @@
 # Video production calendar
 
+## Planning Method: Time-Before-Goals
+
+**Budget time blocks FIRST, then set output goals.** See [⏱️ Time Budget Practice](../1_Real_Unknown/time_budget_practice.md) for research-based rationale (Memmi & Etkin, 2023).
+
+Weekly planning workflow:
+1. List available time blocks (Mon 2h, Tue 1.5h, etc.)
+2. Allocate blocks to platforms/activities
+3. Set realistic output goals per block
+4. Track and adjust (reduce goals if blocks take longer, don't add phantom hours)
+
 ## Cadence locked in
 
 - **YouTube long-form:** Mondays

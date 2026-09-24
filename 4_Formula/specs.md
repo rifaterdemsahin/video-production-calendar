@@ -191,5 +191,24 @@
 ```
 
 
+### SPEC-014: Time-Before-Goals Planning Practice
+- **Status:** Active
+- **Description:** Research-based planning method integrated into calendar and OKR workflows. When juggling multiple production goals (YouTube Long, Shorts, LinkedIn, X), budget available time into discrete blocks FIRST, then set realistic output goals for each block.
+- **Key Behaviors:**
+  - Time budget planner embedded in visual calendar view (`5_Symbols/production_calendar.html`)
+  - Weekly time budget template: allocate hours per day, then set platform targets
+  - Sprint time budget template: total hours → activity allocation → deliverable scope
+  - Docs page at `1_Real_Unknown/time_budget_practice.md` explains research (Memmi & Etkin, 2023)
+  - Menu entry "⏱️ Time Budget Practice" in projectMenu (after OKRs)
+  - Production calendar (`4_Formula/video_production_calendar.md`) references time-first workflow
+  - OKRs document links to practice for Key Result 1 (maintain cadence)
+  - Mechanism: disaggregates total time into mental accounts → better-calibrated targets
+  - Outcome: better progress distribution, higher satisfaction (vs. target-first overestimation)
+- **Research Citation:** Memmi, S. A., & Etkin, J. (2023). Time before goals: The benefits of budgeting time first for multiple goal setting and pursuit. *Organizational Behavior and Human Decision Processes*, *195*, 104148.
+- **Related Files:** `1_Real_Unknown/time_budget_practice.md`, `5_Symbols/production_calendar.html`, `4_Formula/video_production_calendar.md`, `1_Real_Unknown/okrs.md`, `navigation_config.json`
+- **Last Updated:** 2026-09-24
+
+---
+
 ## SPEC — Project links in README
 README must keep emoji quick-links for repo, Pages, pipeline, specs, and dictionary.
