@@ -302,6 +302,160 @@
       border-top: 3px solid var(--accent-cyan);
     }
 
+    .time-budget-section {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+    }
+
+    .budget-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .budget-header h2 {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 0;
+      color: var(--text-primary);
+    }
+
+    .budget-toggle {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .budget-toggle:hover {
+      color: var(--accent-cyan);
+    }
+
+    .budget-toggle i {
+      transition: transform 0.3s ease;
+    }
+
+    .budget-toggle.open i {
+      transform: rotate(180deg);
+    }
+
+    .budget-content {
+      margin-top: 1.5rem;
+    }
+
+    .budget-explainer {
+      background-color: rgba(139, 92, 246, 0.1);
+      border-left: 3px solid var(--accent-violet);
+      padding: 1rem;
+      border-radius: 6px;
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .budget-explainer p {
+      margin: 0;
+    }
+
+    .budget-explainer strong {
+      color: var(--accent-violet);
+    }
+
+    .budget-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .budget-day {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .budget-day label {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .time-input,
+    .goal-input {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 0.5rem;
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      transition: var(--transition);
+    }
+
+    .time-input {
+      font-weight: 600;
+      color: var(--accent-cyan);
+    }
+
+    .time-input:focus,
+    .goal-input:focus {
+      outline: none;
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 10px rgba(6, 182, 212, 0.2);
+    }
+
+    .budget-actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: flex-end;
+    }
+
+    .budget-btn {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      font-family: var(--font-body);
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .budget-btn:not(.secondary) {
+      background: linear-gradient(135deg, var(--accent-violet), var(--accent-cyan));
+      color: white;
+    }
+
+    .budget-btn.secondary {
+      background-color: transparent;
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+    }
+
+    .budget-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+    }
+
+    .budget-btn.secondary:hover {
+      border-color: var(--accent-red);
+      color: var(--accent-red);
+      box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2);
+    }
+
     @media (max-width: 968px) {
       .calendar-grid {
         grid-template-columns: 1fr;
@@ -331,6 +485,62 @@
     <div class="header">
       <h1>📅 Video Production Calendar</h1>
       <p>Sprint 1: Claude Associate Dictionary</p>
+    </div>
+
+    <!-- Time Budget Planner Section -->
+    <div class="time-budget-section" id="timeBudgetSection">
+      <div class="budget-header">
+        <h2>⏱️ Weekly Time Budget Planner</h2>
+        <button class="budget-toggle" id="budgetToggle">
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
+      <div class="budget-content" id="budgetContent" style="display: none;">
+        <div class="budget-explainer">
+          <p><strong>Research-based practice:</strong> Budget your available time into blocks FIRST, then set realistic output goals for each block. <a href="../1_Real_Unknown/time_budget_practice.md" style="color: var(--accent-cyan);">Learn why →</a></p>
+        </div>
+        <div class="budget-grid">
+          <div class="budget-day">
+            <label>Monday</label>
+            <input type="text" class="time-input" placeholder="e.g., 2h" data-day="monday">
+            <input type="text" class="goal-input" placeholder="Output goal for this block" data-day="monday">
+          </div>
+          <div class="budget-day">
+            <label>Tuesday</label>
+            <input type="text" class="time-input" placeholder="e.g., 1.5h" data-day="tuesday">
+            <input type="text" class="goal-input" placeholder="Output goal for this block" data-day="tuesday">
+          </div>
+          <div class="budget-day">
+            <label>Wednesday</label>
+            <input type="text" class="time-input" placeholder="e.g., 1h" data-day="wednesday">
+            <input type="text" class="goal-input" placeholder="Output goal for this block" data-day="wednesday">
+          </div>
+          <div class="budget-day">
+            <label>Thursday</label>
+            <input type="text" class="time-input" placeholder="e.g., 1.5h" data-day="thursday">
+            <input type="text" class="goal-input" placeholder="Output goal for this block" data-day="thursday">
+          </div>
+          <div class="budget-day">
+            <label>Friday</label>
+            <input type="text" class="time-input" placeholder="e.g., 1h" data-day="friday">
+            <input type="text" class="goal-input" placeholder="Output goal for this block" data-day="friday">
+          </div>
+          <div class="budget-day">
+            <label>Saturday</label>
+            <input type="text" class="time-input" placeholder="e.g., 1h" data-day="saturday">
+            <input type="text" class="goal-input" placeholder="Output goal for this block" data-day="saturday">
+          </div>
+          <div class="budget-day">
+            <label>Sunday</label>
+            <input type="text" class="time-input" placeholder="e.g., 0h" data-day="sunday">
+            <input type="text" class="goal-input" placeholder="Output goal for this block" data-day="sunday">
+          </div>
+        </div>
+        <div class="budget-actions">
+          <button class="budget-btn" id="saveBudget"><i class="fas fa-save"></i> Save to Local Storage</button>
+          <button class="budget-btn secondary" id="clearBudget"><i class="fas fa-trash"></i> Clear</button>
+        </div>
+      </div>
     </div>
 
     <div class="controls">
@@ -529,6 +739,69 @@
     });
 
     renderCalendar();
+
+    // Time Budget Planner Toggle
+    const budgetToggle = document.getElementById('budgetToggle');
+    const budgetContent = document.getElementById('budgetContent');
+    const budgetHeader = document.querySelector('.budget-header');
+
+    budgetHeader.addEventListener('click', () => {
+      const isOpen = budgetContent.style.display === 'block';
+      budgetContent.style.display = isOpen ? 'none' : 'block';
+      budgetToggle.classList.toggle('open');
+      localStorage.setItem('budgetPlannerOpen', !isOpen);
+    });
+
+    // Restore budget planner state
+    if (localStorage.getItem('budgetPlannerOpen') === 'true') {
+      budgetContent.style.display = 'block';
+      budgetToggle.classList.add('open');
+    }
+
+    // Load saved time budget
+    function loadTimeBudget() {
+      const budget = JSON.parse(localStorage.getItem('weeklyTimeBudget') || '{}');
+      ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'].forEach(day => {
+        if (budget[day]) {
+          document.querySelector(`.time-input[data-day="${day}"]`).value = budget[day].time || '';
+          document.querySelector(`.goal-input[data-day="${day}"]`).value = budget[day].goal || '';
+        }
+      });
+    }
+
+    // Save time budget
+    document.getElementById('saveBudget').addEventListener('click', () => {
+      const budget = {};
+      ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'].forEach(day => {
+        const time = document.querySelector(`.time-input[data-day="${day}"]`).value;
+        const goal = document.querySelector(`.goal-input[data-day="${day}"]`).value;
+        if (time || goal) {
+          budget[day] = { time, goal };
+        }
+      });
+      localStorage.setItem('weeklyTimeBudget', JSON.stringify(budget));
+      
+      // Visual feedback
+      const btn = document.getElementById('saveBudget');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '<i class="fas fa-check"></i> Saved!';
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+      }, 2000);
+    });
+
+    // Clear time budget
+    document.getElementById('clearBudget').addEventListener('click', () => {
+      if (confirm('Clear all time budget data?')) {
+        localStorage.removeItem('weeklyTimeBudget');
+        document.querySelectorAll('.time-input, .goal-input').forEach(input => {
+          input.value = '';
+        });
+      }
+    });
+
+    // Load on page load
+    loadTimeBudget();
   </script>
 </body>
 </html>

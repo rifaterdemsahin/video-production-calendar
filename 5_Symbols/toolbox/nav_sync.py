@@ -11,6 +11,7 @@ MENU = [
     ("🔍 1. Real Unknown", "1_Real_Unknown/README.md"),
     ("   ├─ 📋 Problem Statement", "1_Real_Unknown/problem_statement.md"),
     ("   ├─ 🎯 OKRs", "1_Real_Unknown/okrs.md"),
+    ("   ├─ ⏱️ Time Budget Practice", "1_Real_Unknown/time_budget_practice.md"),
     ("   ├─ 💡 Hypotheses", "1_Real_Unknown/hypotheses.md"),
     ("   ├─ ❓ Questions", "1_Real_Unknown/questions.md"),
     ("   ├─ 📊 Kanban Board", "1_Real_Unknown/kanban.md"),
