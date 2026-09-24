@@ -4,34 +4,41 @@
 
 - 📦 **Repo:** https://github.com/rifaterdemsahin/video-production-calendar
 - 🌐 **GitHub Pages (live):** https://rifaterdemsahin.github.io/video-production-calendar/
+- 📅 **Calendar View:** https://rifaterdemsahin.github.io/video-production-calendar/5_Symbols/production_calendar.html
 - 🎬 **Production pipeline:** https://github.com/rifaterdemsahin/VideoProductionPipeline
 - 📝 **Weekly specs:** https://github.com/rifaterdemsahin/weekly-video-spec-template
 - 📚 **Claude Associate dictionary:** https://github.com/rifaterdemsahin/ai-dictionary-timeline
 - ▶️ **YouTube:** https://www.youtube.com/@RifatErdemSahin
-- 🧭 **Calendar artifact:** https://rifaterdemsahin.github.io/video-production-calendar/5_Symbols/markdown_renderer.html?file=4_Formula/video_production_calendar.md
 
 ---
 
-Video production calendar for AI certification courses on Skool — YouTube long + short, LinkedIn, and X releases.
+**OKR-focused video production calendar** for AI certification courses on Skool — YouTube long + short, LinkedIn, and X releases.
 
-## Goal
+## 🎯 OKRs (Objectives & Key Results)
 
-- **Objective:** create a video production calendar
-- **Key result:** creating videos with cadence and releasing them to their medium
-- **Environment:** producing with tools in VideoProductionPipeline
-- **Sources:** research via weekly-video-spec-template
-- **Current delivery:** Claude Associate course dictionary (ai-dictionary-timeline)
+### Objective
+Create a reliable video production calendar for Skool AI certification courses, with releases across YouTube (long + short), LinkedIn, and X.
 
-## Cadence (starting point)
+### Key Results
+1. ✅ Maintain the published weekly cadence across all four platforms
+2. 🎓 Ship Sprint 1 Claude Associate dictionary videos from ai-dictionary-timeline
+3. 🔗 Keep every planned item linked to VideoProductionPipeline + weekly-video-spec-template
+4. 🌐 Landing page + calendar docs stay deployable on GitHub Pages
 
-| Platform | Frequency | Notes |
-|----------|-----------|--------|
-| YouTube long-form | 1× / week (Monday) | 10–20 min deep-dives |
-| YouTube Shorts | 3× / week (Tue / Thu / Sat) | ~60s tips / terms |
-| LinkedIn | 2× / week (Wed / Fri) | Video + context |
-| X | 3–5× / week | Clips / threads |
+## 📅 Production Cadence
 
-See `4_Formula/video_production_calendar.md` for Sprint 1 and checklists.
+| Platform | Frequency | Day(s) | Notes |
+|----------|-----------|--------|-------|
+| 🎥 YouTube long-form | 1× / week | **Monday** | 10–20 min deep-dives |
+| 📱 YouTube Shorts | 3× / week | **Tue / Thu / Sat** | ~60s tips / terms |
+| 💼 LinkedIn | 2× / week | **Wed / Fri** | Video + context |
+| 🐦 X | 3–5× / week | **Varies** | Clips / threads |
+
+### 📊 Visual Calendar
+
+The **[📅 Calendar View](https://rifaterdemsahin.github.io/video-production-calendar/5_Symbols/production_calendar.html)** provides a digestible month/week view of the production schedule with color-coded platform indicators.
+
+See `4_Formula/video_production_calendar.md` for Sprint 1 details and checklists.
 
 ## Framework
 
